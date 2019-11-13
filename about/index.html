@@ -7,16 +7,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签 - Free Monad</title>
+<title>About Free Monad - Free Monad</title>
 
 
-    <meta name="keywords" content="Hello World">
+    <meta name="description" content="Free MonadFree monad allows us to construct a monad from a functor: 1data Free f r = Free (f (Free f r)) | Pure r   Free Monad gives you a free monad for a given functor.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Free Monad">
-<meta property="og:url" content="http:&#x2F;&#x2F;free-mona.de&#x2F;tags&#x2F;index.html">
+<meta property="og:title" content="About Free Monad">
+<meta property="og:url" content="http:&#x2F;&#x2F;free-mona.de&#x2F;about&#x2F;index.html">
 <meta property="og:site_name" content="Free Monad">
+<meta property="og:description" content="Free MonadFree monad allows us to construct a monad from a functor: 1data Free f r = Free (f (Free f r)) | Pure r   Free Monad gives you a free monad for a given functor.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;free-mona.de&#x2F;images&#x2F;og_image.png">
+<meta property="og:updated_time" content="2019-11-13T16:10:09.064Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;free-mona.de&#x2F;images&#x2F;og_image.png">
 
@@ -70,13 +72,13 @@
 
 <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="is-2-column">
+<body class="is-1-column">
     <nav class="navbar navbar-main">
     <div class="container">
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/freemonad.png" alt="Free Monad" height="28">
+                <img src="/images/freemonad.png" alt="About Free Monad" height="28">
             
             </a>
         </div>
@@ -93,7 +95,7 @@
                 <a class="navbar-item"
                 href="/categories">Categories</a>
                 
-                <a class="navbar-item"
+                <a class="navbar-item is-active"
                 href="/about">About</a>
                 
             </div>
@@ -114,146 +116,39 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Hello-World/">
-                        <span class="tag">Hello World</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div></div>
-                
-                
-
-
-
-
-<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right ">
+                <div class="column is-12 has-order-2 column-main">
+<div class="card">
     
+    <div class="card-content article ">
         
-<div class="card widget">
-    <div class="card-content">
-        <nav class="level">
-            <div class="level-item has-text-centered" style="flex-shrink: 1">
-                <div>
-                    
-                    <figure class="image is-128x128 has-mb-6">
-                        <img class="is-rounded" src="https://www.gravatar.com/avatar/86a1da9fbb286042b7106fb57acdbe4b?s=128" alt="Yichen Xu">
-                    </figure>
-                    
-                    <p class="is-size-4 is-block">
-                        Yichen Xu
-                    </p>
-                    
-                    
-                    
-                </div>
-            </div>
-        </nav>
-        <nav class="level is-mobile">
-            <div class="level-item has-text-centered is-marginless">
-                <div>
-                    <p class="heading">
-                        文章
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        1
-                    </p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered is-marginless">
-                <div>
-                    <p class="heading">
-                        分类
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        1
-                    </p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered is-marginless">
-                <div>
-                    <p class="heading">
-                        标签
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        1
-                    </p>
-                </div>
-            </div>
-        </nav>
-        
-        <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://github.com/linyxus" target="_blank">
-                关注我</a>
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                About Free Monad
+            
+        </h1>
+        <div class="content">
+            <h1 id="Free-Monad"><a href="#Free-Monad" class="headerlink" title="Free Monad"></a>Free Monad</h1><p>Free monad allows us to construct a monad from a functor:</p>
+<figure class="highlight haskell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Free</span> f r = <span class="hljs-type">Free</span> (<span class="hljs-title">f</span> (<span class="hljs-type">Free</span> <span class="hljs-title">f</span> <span class="hljs-title">r</span>)) | <span class="hljs-type">Pure</span> r</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Free Monad gives you a free monad for a given functor.</p>
+</blockquote>
+
         </div>
         
         
         
     </div>
 </div>
-    
-        
-    
-        <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            链接
-        </h3>
-        <ul class="menu-list">
-        
-            <li>
-                <a class="level is-mobile" href="https://blog.linyxus.xyz" target="_blank">
-                    <span class="level-left">
-                        <span class="level-item">Main Blog</span>
-                    </span>
-                    <span class="level-right">
-                        <span class="level-item tag">blog.linyxus.xyz</span>
-                    </span>
-                </a>
-            </li>
-        
-        </ul>
-        </div>
-    </div>
-</div>
 
-    
-        <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Hello-World/">
-                        <span class="tag">Hello World</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-    
-    
-</div>
 
+
+
+
+
+</div>
+                
+                
             </div>
         </div>
     </section>
@@ -263,7 +158,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/freemonad.png" alt="Free Monad" height="28">
+                    <img src="/images/freemonad.png" alt="About Free Monad" height="28">
                 
                 </a>
                 <p class="is-size-7">
