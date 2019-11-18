@@ -10,15 +10,15 @@
 <title>About Free Monad - Free Monad</title>
 
 
-    <meta name="description" content="Free MonadFree monad allows us to construct a monad from a functor: 1data Free f r = Free (f (Free f r)) | Pure r   Free Monad gives you a free monad for a given functor.">
+    <meta name="description" content="Free MonadFree monad allows us to construct a monad from a functor: 1data Free f r = Free (f (Free f r)) | Pure r  1234instance (Functor f) =&amp;gt; Monad (Free f) where  return = Pure  Pure a &amp;gt;&amp;gt;=">
 <meta property="og:type" content="website">
 <meta property="og:title" content="About Free Monad">
 <meta property="og:url" content="http:&#x2F;&#x2F;free-mona.de&#x2F;about&#x2F;index.html">
 <meta property="og:site_name" content="Free Monad">
-<meta property="og:description" content="Free MonadFree monad allows us to construct a monad from a functor: 1data Free f r = Free (f (Free f r)) | Pure r   Free Monad gives you a free monad for a given functor.">
+<meta property="og:description" content="Free MonadFree monad allows us to construct a monad from a functor: 1data Free f r = Free (f (Free f r)) | Pure r  1234instance (Functor f) =&amp;gt; Monad (Free f) where  return = Pure  Pure a &amp;gt;&amp;gt;=">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;free-mona.de&#x2F;images&#x2F;og_image.png">
-<meta property="og:updated_time" content="2019-11-13T16:10:09.064Z">
+<meta property="og:updated_time" content="2019-11-18T13:52:09.638Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;free-mona.de&#x2F;images&#x2F;og_image.png">
 
@@ -129,6 +129,8 @@
         <div class="content">
             <h1 id="Free-Monad"><a href="#Free-Monad" class="headerlink" title="Free Monad"></a>Free Monad</h1><p>Free monad allows us to construct a monad from a functor:</p>
 <figure class="highlight haskell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Free</span> f r = <span class="hljs-type">Free</span> (<span class="hljs-title">f</span> (<span class="hljs-type">Free</span> <span class="hljs-title">f</span> <span class="hljs-title">r</span>)) | <span class="hljs-type">Pure</span> r</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight haskell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">instance</span> (<span class="hljs-type">Functor</span> <span class="hljs-title">f</span>) =&gt; <span class="hljs-type">Monad</span> (<span class="hljs-type">Free</span> <span class="hljs-title">f</span>) <span class="hljs-keyword">where</span></span></span><br><span class="line">  return = <span class="hljs-type">Pure</span></span><br><span class="line">  <span class="hljs-type">Pure</span> a &gt;&gt;= k = k a</span><br><span class="line">  <span class="hljs-type">Free</span> m &gt;&gt;= k = <span class="hljs-type">Free</span> ((&gt;&gt;= k) &lt;$&gt; m)</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>Free Monad gives you a free monad for a given functor.</p>
